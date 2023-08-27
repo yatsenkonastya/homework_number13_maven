@@ -14,53 +14,53 @@ public class UsersTest {
     @BeforeAll
     public static void initUsers() {
         userManager = new UserManager();
-        userManager.users.add(new User("Olga", "Troy", 67));
-        userManager.users.add(new User("Artem", "Argo", 75));
-        userManager.users.add(new User("Yulia", "Kiylo", 25));
-        userManager.users.add(new User("Eva", "Weslo", 8));
-        userManager.users.add(new User("Katya", "Stef", 25));
-        userManager.users.add(new User("Andrey", "Don", 25));
+        userManager.users.add(new User("Inga", "Oppa", 67));
+        userManager.users.add(new User("Ronn", "Wizli", 75));
+        userManager.users.add(new User("Nastya", "Yatsenko", 25));
+        userManager.users.add(new User("Peter", "Parker", 8));
+        userManager.users.add(new User("Kris", "Petrova", 25));
+        userManager.users.add(new User("Bodya", "Leonar", 25));
     }
     @BeforeAll
     public static void initSortedUsersByFirstNameAndAge() {
         userSortedManager = new UserManager();
-        userSortedManager.users.add(new User("Artem", "Argo", 75));
-        userSortedManager.users.add(new User("Olga", "Troy", 67));
-        userSortedManager.users.add(new User("Andrey", "Don", 25));
-        userSortedManager.users.add(new User("Katya", "Stef", 25));
-        userSortedManager.users.add(new User("Yulia", "Kiylo", 25));
-        userSortedManager.users.add(new User("Eva", "Weslo", 8));
+        userSortedManager.users.add(new User("Ronn", "Wizli", 75));
+        userSortedManager.users.add(new User("Inga", "Oppa", 67));
+        userSortedManager.users.add(new User("Nastya", "Yatsenko", 25));
+        userSortedManager.users.add(new User("Kris", "Petrova", 25));
+        userSortedManager.users.add(new User("Bodya", "Leonar", 25));
+        userSortedManager.users.add(new User("Peter", "Parker", 8));
     }
     @BeforeAll
     public static void initSortedUsersByAge() {
         userSortedByAgeManager = new UserManager();
-        userSortedByAgeManager.users.add(new User("Eva", "Weslo", 8));
-        userSortedByAgeManager.users.add(new User("Yulia", "Kiylo", 25));
-        userSortedByAgeManager.users.add(new User("Katya", "Stef", 25));
-        userSortedByAgeManager.users.add(new User("Andrey", "Don", 25));
-        userSortedByAgeManager.users.add(new User("Olga", "Troy", 67));
-        userSortedByAgeManager.users.add(new User("Artem", "Argo", 75));
+        userSortedByAgeManager.users.add(new User("Peter", "Parker", 8));
+        userSortedByAgeManager.users.add(new User("Nastya", "Yatsenko", 25));
+        userSortedByAgeManager.users.add(new User("Bodya", "Leonar", 25));
+        userSortedByAgeManager.users.add(new User("Kris", "Petrova", 25));
+        userSortedByAgeManager.users.add(new User("Inga", "Oppa", 67));
+        userSortedByAgeManager.users.add(new User("Ronn", "Wizli", 75));
     }
 
     @BeforeAll
     public static void initUpToEighteen() {
         userEighteenManager = new UserManager();
-        userEighteenManager.users.add(new User("Slga", "Troy", 67));
-        userEighteenManager.users.add(new User("Artem", "Argo", 75));
-        userEighteenManager.users.add(new User("Yulia", "Kiylo", 25));
+        userEighteenManager.users.add(new User("Ronn", "Oppa", 67));
+        userEighteenManager.users.add(new User("Kris", "Wizli", 75));
+        userEighteenManager.users.add(new User("Bodya", "Leonar", 19));
     }
 
     @BeforeAll
     public static void initUpToEighteenNegative() {
         userEighteenManagerNeg = new UserManager();
-        userEighteenManagerNeg.users.add(new User("Olga", "Troy", 9));
-        userEighteenManagerNeg.users.add(new User("Inna", "Argo", 7));
-        userEighteenManagerNeg.users.add(new User("Yulia", "Kiylo", 18));
+        userEighteenManagerNeg.users.add(new User("Kris", "Yatsenko", 25));
+        userEighteenManagerNeg.users.add(new User("Peter", "Petrova", 8));
+        userEighteenManagerNeg.users.add(new User("Nastya", "Yatsenko", 21));
     }
 
     @BeforeEach
     public void printAfterTest() {
-        System.out.println("Start of testing");
+        System.out.println("Let`s start");
     }
 
     @Test
